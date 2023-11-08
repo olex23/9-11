@@ -1,0 +1,22 @@
+<p>
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+    {% if  user.is_authenticated %}
+    <h2>Welcome, {{user.username}}</h2>
+    {% else %}
+        <div class="jumbotron">
+        <h1 class="display-3">Track your learning.</h1>
+
+        <p class="lead"> mak your......</p>
+        <a class="btn-lg btn-primary" href="{% url 'user:register' %}"
+           role="button">Register &raquo;</a>
+    {% endif %}
+
+
+
+</div>
+
+
+
+    {% endblock content %}
