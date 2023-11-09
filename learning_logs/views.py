@@ -8,7 +8,7 @@ from django.http import Http404
 def index(request):
     """Головна сторінка "Журнал спостережень" """
 
-    return render(request, 'learning_logs/docs/index.html')
+    return render(request, 'docs/index.html')
 
 
 @login_required
